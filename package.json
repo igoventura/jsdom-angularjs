@@ -1,0 +1,18 @@
+{
+  "name": "angular-global",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js && standard"
+  },
+  "author": "Igo Ventura",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.7.8",
+    "jsdom": "^14.0.0",
+    "jsdom-global": "^3.0.2",
+    "standard": "^12.0.1",
+    "tape": "^4.10.1"
+  }
+}
