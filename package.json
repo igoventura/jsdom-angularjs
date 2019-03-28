@@ -1,10 +1,11 @@
 {
-  "name": "angular-global",
-  "version": "0.0.1",
+  "name": "jsdom-angularjs",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js && standard"
+    "test": "node test.js && standard",
+    "standard": "standard --fix"
   },
   "author": "Igo Ventura",
   "license": "MIT",

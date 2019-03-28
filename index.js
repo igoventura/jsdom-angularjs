@@ -22,8 +22,10 @@ module.exports = function globalJsdom (customOptions) {
 
   var dom = new JSDOM('', options)
 
+  var noop = (...args) => {}
+
   var window = dom.window
-  window.angular = window.angular || {}
+  window.angular = window.angular || { module: noop, controller: noop, directive: noop }
   dom.angular = window.angular
 
   KEYS.forEach(function (key) {
