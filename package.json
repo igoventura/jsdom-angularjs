@@ -1,19 +1,23 @@
 {
   "name": "jsdom-angularjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js && standard",
+    "build": "tsc ./*.ts",
+    "test": "ts-node test.js && standard",
     "standard": "standard --fix"
   },
   "author": "Igo Ventura",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^11.12.0",
     "angular": "^1.7.8",
     "jsdom": "^14.0.0",
     "jsdom-global": "^3.0.2",
     "standard": "^12.0.1",
-    "tape": "^4.10.1"
+    "tape": "^4.10.1",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.4000"
   }
 }

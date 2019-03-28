@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["es2015", "es2016", "es2017", "esnext"]
+    },
+    "include": [
+        "./node_modules/**/*.d.ts",
+        "./@types/*.d.ts",
+        "./*.ts"
+    ]
+}

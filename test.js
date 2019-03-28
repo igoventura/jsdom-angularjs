@@ -2,8 +2,33 @@ var test = require('tape')
 require('jsdom-global')()
 var angular
 
-test('angular', async function (t) {
-  angular = require('./index')()
+var noop = (...args) => noop
+var Controller = {}
+
+test('angular', function (t) {
+  angular = require('./index').default()
+  t.end()
+})
+
+test('angular:module', function (t) {
+  const module = global.angular.module('teste')
+  t.ok(typeof module === typeof {
+    module: noop,
+    controller: noop,
+    directive: noop,
+    service: noop
+  })
+  t.end()
+})
+
+test('angular:controller', function (t) {
+  const controller = global.angular.module('teste').controller('teste.controller', Controller)
+  t.ok(typeof controller === typeof {
+    module: noop,
+    controller: noop,
+    directive: noop,
+    service: noop
+  })
   t.end()
 })
 
