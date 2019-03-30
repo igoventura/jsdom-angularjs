@@ -79,7 +79,7 @@ after(function () {
 If you prefer to use `import` rather than `require`, you might want to use `jsdom-global/register` instead. Place it on top of your other import calls.
 
 ```js
-import 'jsdom-global/register'
+import 'jsdom-angularjs/register'
 import React from 'react'
 import jQuery from 'jquery'
 // ...
