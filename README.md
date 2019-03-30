@@ -80,8 +80,6 @@ If you prefer to use `import` rather than `require`, you might want to use `jsdo
 
 ```js
 import 'jsdom-angularjs/register'
-import React from 'react'
-import jQuery from 'jquery'
 // ...
 ```
 
@@ -89,5 +87,5 @@ import jQuery from 'jquery'
 
 **jsdom-angularjs** © 2019+, Igo Ventura. Released under the [MIT] License.<br>
 
-> GitHub [@rstacruz](https://github.com/igoventura) &nbsp;&middot;&nbsp;
-> Twitter [@rstacruz](https://twitter.com/igoventura)
+> GitHub [@igoventura](https://github.com/igoventura) &nbsp;&middot;&nbsp;
+> Twitter [@igoventura](https://twitter.com/igoventura)
